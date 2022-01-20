@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+html{margin: 0;padding: 0;font-family: 'Varela Round';}
+:root{
+    --red: #ec2f3f;
+}
+
+$Colores__styles: (  
+"Fuccia": #F53141,
+"Blanco": #fff,
+"Azuloscuro": #191C22,
+"Fondogris": #dbddf1,
+);
+
+
+*:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: map-get($Colores__styles, Fondogris);
+    margin:0;
+
+}
+
+.logosoff img {
+    display: flex;
+margin-right: 300px;    
+width: 80%;
+}
+
+/* Contenedor principal (De los elementos dentro de la etiqueta main) */
+.main__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+
+    /* Franja negra */
+&__main__bg{
+    width: 120%;
+    background: var(--black);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    background-color: map-get($Colores__styles, Azuloscuro);
+
+& img {
+        display: block;
+        margin-left: 10px;
+        width: 30%;
+      }
+
+    /* Contenedor del texto*/
+&__content__text{
+    color: map-get($Colores__styles, Blanco);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* SOFF LINARES */
+&__name{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* TATTOO */
+&__tattoo{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--red); 
+    text-transform: uppercase;
+}
+
+/* Texto */
+&__paragraph{
+    width: 70%;
+    display: inline-block;
+    margin: auto;
+
+    
+/* Estilos del parrafo */
+& p{
+    text-align: left;
+    font-size: 18px;
+}
+
+}
+
+/* Mas info contenedor */
+
+&__mas__info{
+    color:  map-get($Colores__styles, Blanco);
+    width: 30%;
+    margin: 0 auto;
+    width: 27%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: var(--red);
+    transition: all .3s;
+
+/* Mas info estilos texto */
+& p{
+    margin: auto;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Mas info parrafo efecto */
+
+&:hover{
+    background:  map-get($Colores__styles, Blanco);
+    width: 30%;
+    color: var(--red);
+}
+
+}
+
+}    
+
+ }
+        }
+
+/* Contenedor general de iconos */
+.social__media{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Contenedor de solo los iconos */
+.social__media div{
+    display: flex;
+
+}  
+
+.contacto__contenedor{
+min-height: 60vh;
+}
+
+#carouselExampleControls{
+width: 90%;
+ }
+
+.contenedor__carousel {
+ display: flex;
+ justify-content: center; 
+ margin: 30px;  
+}
+
+@media (max-width: 952px){
+/* SOFF LINARES */
+.main__container__main__bg__content__text__name{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* TATTOO */
+.main__container__main__bg__content__text__tattoo{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--red); 
+    text-transform: uppercase;
+}
+
+/* Texto */
+.main__container__main__bg__content__text__paragraph{
+    width: 90%;
+    display: inline-block;
+    margin: auto;
+} 
+
+/* Mas info contenedor */
+.main__container__main__bg__content__text__mas__info{
+    color: white;
+    margin: 15px auto;
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: var(--red);
+    transition: all .3s;
+}
+
+/* Mas info estilos texto */
+.main__container__main__bg__content__text__mas__info p{
+    margin: auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Mas info parrafo efecto */
+.main__container__main__bg__content__text__mas__info:hover{
+    background: white;
+    color: var(--red);
+}
+
+/* Contenedor de solo los iconos */
+.social__media div{
+    display: flex;
+
+}  
+
+/* Contenedor general de iconos */
+.social__media{
+    display: flex;
+    align-items: center;
+    width: 18%;
+    justify-content: space-between;
+    margin: 0 0 30px 50px;
+    margin-left: 3vh;
+    margin-top: 30px;
+
+    
+
+}
+
+/* Tamaño de los iconos */
+.social__media img{
+    width: 50px;
+    height: 50px;
+}
+
+}
+
+
+/* FAQ */
+
+
+.home {
+    display:flex
+}
+
+.in-flex {
+    flex: 1;
+}
+
+.in-flex:first-child {
+    flex: 1;
+    padding: 5px;
+    background-color: map-get($Colores__styles, Fuccia);
+
+    margin: 0px;
+    width: 100%;
+    height: 18rem;
+    margin-top: 145px;
+    display: flex;
+}
+
+.in-flex div{
+    padding: 5px;
+    background-color: #fff;
+    margin: 0px;
+    margin-top: 145px;
+    width: 100%;
+    height: 18rem;
+
+}
+
+@media (max-width: 877px){
+
+    /* SOFF LINARES */
+.main__container__main__bg__content__text__name{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* TATTOO */
+.main__container__main__bg__content__text__tattoo{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--red); 
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-left: -25px;
+}
+
+/* Texto */
+.main__container__main__bg__content__text__paragraph{
+    width: 200%;
+    display: inline-block;
+    margin: auto;
+} 
+
+.main__container__main__bg__content__text__paragraph p {
+
+font-size: 12px;
+width: 100%;
+margin-left: 20px;
+
+}
+
+/* Mas info contenedor */
+.main__container__main__bg__content__text__mas__info{
+    color: white;
+    margin: 15px auto;
+    width: 70%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: var(--red);
+    transition: all .3s;
+}
+
+/* Mas info estilos texto */
+.main__container__main__bg__content__text__mas__info p{
+    margin: auto;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Mas info parrafo efecto */
+.main__container__main__bg__content__text__mas__info:hover{
+    background: white;
+    color: var(--red);
+}
+
+/* Contenedor de solo los iconos */
+.social__media div{
+    display: flex;
+
+}  
+
+/* Contenedor general de iconos */
+.social__media{
+    display: flex;
+    align-items: center;
+    width: 18%;
+    justify-content: space-between;
+    margin: 0 0 30px 50px;
+    margin-left: 2vh;
+    margin-top: 10px;
+
+    
+
+}
+
+/* Tamaño de los iconos */
+.social__media img{
+    width: 50px;
+    height: 50px;
+}
+
+.main__bg img {
+    display: block;
+    margin-left: 5px;
+    width: 30%;
+  }
+
+}

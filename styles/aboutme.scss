@@ -1,0 +1,81 @@
+/* variables about me */
+
+$Colores__Aboutme: (  
+"Fuccia": #F53141,
+"Blanco": #fff,
+"Amarillo": rgb(243, 243, 19),
+);
+
+/* scss */
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  input {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: #BBB;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  h2, h3 {
+    margin: 0 0 .75em 0;
+  }
+
+  .contenedor__Texto
+  p {
+    text-align: center;
+  }
+
+  li {
+    text-align: center;
+  }
+  h1
+  {
+    text-align: center;
+  }
+  
+  .equal-height-container {
+    min-height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 35px;
+    margin-top: 35px;
+
+    &__first {
+      background-color: map-get($Colores__Aboutme, Fuccia);
+      padding: 20px;
+      flex: 1;
+    }
+
+    &__second {
+      background-color: map-get($Colores__Aboutme, Amarillo);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    
+      &__a {
+        background-color: map-get($Colores__Aboutme, Blanco);
+        flex: 1;
+        padding: 20px;
+
+        &__imagen {
+          display: flex;
+          width: 100%;
+        }        
+      }
+      
+      
+      &__b {
+        background-color: #fff;
+        flex: 1;
+      } 
+      
+    }
+  } 
